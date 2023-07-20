@@ -1,0 +1,60 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.container{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   width: 80%;
+   margin:40px auto;
+   padding: 20px 0;
+}
+
+.container input,button{
+  width: 300px;
+  padding: 10px;
+  border: 1px solid ;
+  display: block;
+  margin: 10px auto;
+  border-radius: 20px;
+}
+.container button{
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+}
+.qrcode{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+  flex-wrap: wrap;
+  padding: 50px;
+
+}
+.qrcode canvas{
+ 
+  margin: 30px;
+  border: 1px solid;
+  display: inline-block;
+  border-radius: 10px;
+
+}
+
+.qrcode  img{
+  height: 100px;
+  width: 100px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: block;
+  padding: 10px;
+
+}

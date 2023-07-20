@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code </title>
+    <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+ <div class="container">
+  <!-- Add an input field for the user to enter the text -->
+<input type="text" id="inputText" placeholder="Enter text here">
+
+<!-- Add a button to trigger the QR code generation -->
+<button onclick="generateQRCode()">Generate QR Code</button>
+
+<!-- Add a container to display the QR code -->
+<div id="qrcode" class="qrcode"></div>
+
+ </div>
+<!-- Include the qrcode library -->
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js">
+</script>
+
+
+
+<script>
+ function generateQRCode() {
+  // Get the user input from the text field
+  var userInput = document.getElementById("inputText").value;
+
+  // Create a new QRCode instance
+  var qrCode = new QRCode("qrcode");
+
+  // Generate the QR code using the user input
+  qrCode.makeCode(userInput);
+}
+
+       
+</script>
+
+</body>
+
+</html>
