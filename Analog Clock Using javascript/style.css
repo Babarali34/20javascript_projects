@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fdfbfb;
+}
+
+.clock{
+     height: 400px;
+     width: 400px;
+     border-radius: 50%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     border: 5px solid #111;
+     transform: translate(-50%,-50%);
+}
+
+.numbers{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.numbers div{
+     --rotaion:0;
+     position: absolute;
+     left: 50%;
+     transform: translate(-50%);
+     transform: rotate(var(--rotaion));
+     height: 100%;
+     color: #111;
+      font-size: 30px;
+
+}
+
+.numbers div:nth-child(1){
+    --rotaion:30deg;
+}
+.numbers div:nth-child(2){
+    --rotaion:60deg;
+}
+.numbers div:nth-child(3){
+    --rotaion:90deg;
+}
+.numbers div:nth-child(4){
+    --rotaion:120deg;
+}
+.numbers div:nth-child(5){
+    --rotaion:150deg;
+}
+.numbers div:nth-child(6){
+    --rotaion:180deg;
+}
+.numbers div:nth-child(7){
+    --rotaion:210deg;
+}
+.numbers div:nth-child(8){
+    --rotaion:240deg;
+}
+.numbers div:nth-child(9){
+    --rotaion:270deg;
+}
+.numbers div:nth-child(10){
+    --rotaion:300deg;
+}
+.numbers div:nth-child(11){
+    --rotaion:330deg;
+}
+.numbers div:nth-child(12){
+    --rotaion:360deg;
+}
+
+
+/* handle css */
+
+.handle{
+    --rotaion:0;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    border: 1px solid #222;
+    transform-origin: bottom;
+
+}
+
+.clock .hour{
+      width: 12px;
+      height: 20%;
+      background: #111;
+      border-radius: 30px;
+}
+.clock .mint{
+    width: 6px;
+    height: 30%;
+    background: #d00d0d;
+    border-radius: 30px;
+}
+.clock .second{
+    width: 3px;
+    height: 40%;
+    background: #111;
+    border-radius: 30px;
+}
