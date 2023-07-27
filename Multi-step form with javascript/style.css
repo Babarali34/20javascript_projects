@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*----------------------------------------*/
+body{
+   
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+     max-width: 400px;
+     width: 90%;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: rgba(0, 0, 0,0.16) 0px 1px 4px;
+}
+
+form h1{
+    text-align: center;
+    font-size: 43px;
+    padding: 20px 0;
+}
+
+.from-group input{
+  width: 100%;
+  border: 1.5px solid  rgba(128, 128, 128,0.418);
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 4px;
+   outline: none;
+
+
+}
+
+button{
+     padding: 10px 30px;
+     border: none;
+     outline: none;
+     margin: 20px 10px;
+     background: #05895b;
+     color: #fff;
+     font-size: 16px;
+     cursor: pointer;
+     border-radius:30px;
+     transition: 0.5s ease-out;
+}
+button:hover{
+    opacity: 0.8;
+    background: transparent;
+    color: #111;
+    border: 1px solid;
+}
+
+
+
+button.prev-btn{
+  background-color: rgb(140, 12, 127);
+}
+button.prev-btn:hover{
+    background: transparent;
+    border: 1px solid rgb(140, 12, 127);
+
+}
+.step{
+    display: none;
+}
+.active{
+    display: block;
+}

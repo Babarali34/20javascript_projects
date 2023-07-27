@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+ <section>
+     <div class="container">
+         <form>
+         <h1>Fill the Form </h1>
+
+              <div class="step step-1 active">
+                         <div class="from-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                         </div>  
+                        <div class="from-group">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname">
+                        </div>
+                        <button type="button" class="next-btn">Next</button>
+              </div>
+              <!-- 2nd -->
+            <div class="step step-2 ">
+            <div class="from-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="from-group">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+            </div>
+            <button type="button" class="prev-btn">Prev</button>
+            <button type="button" class="next-btn">Next</button>
+            </div>
+            <!-- 3 -->
+            <div class="step step-3 ">
+          
+                <div class="from-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country">
+                </div>
+                <div class="from-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city">
+                </div>
+                <button type="button" class="prev-btn">Prev</button>
+                <button type="submit" class="next-btn">Submit</button>
+            </div>
+          
+
+         </form>
+     </div>
+ </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
