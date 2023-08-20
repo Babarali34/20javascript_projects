@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.filter-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+     padding: 10px 0;
+     
+}
+
+.filter-buttons button{
+   padding: 10 20px;
+   border: none;
+   outline: none;
+   background: indigo;
+   color: #fff;
+   font-size: 16px;
+   border-radius: 3px;
+}
+
+.gallery {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+
+}
+.gallery div{
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  text-align: center;
+  line-height: 200px;
+}
+
+.gallery div img{
+  height: 100%;
+  width: 100%;
+}
