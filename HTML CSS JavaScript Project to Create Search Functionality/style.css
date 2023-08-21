@@ -1,0 +1,29 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+#search-input {
+  padding: 5px;
+}
+#item-list {
+  list-style: none;
+  padding: 0;
+}
+.item {
+  margin: 5px;
+  padding: 10px;
+
+}
+.item:nth-child(even){
+  background: rgb(156, 37, 16);
+  color:#fff;
+}
+.item:nth-child(odd){
+  background: rgb(6, 55, 118);
+  color:#fff;
+}
